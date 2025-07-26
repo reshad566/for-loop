@@ -1,13 +1,20 @@
 #include<iostream>
 using namespace std;
 int main(){
-     int i,sum=0;
-     for(i=0;i<=10;i++){
-          cout<<i<<endl;
-          
-          sum=sum+i;
-     }
-     cout<<"Sum of first 10 numbers is: "<<sum<<endl;
-     return 0;
+     int n;
+     cout<<"Enter number of different items:";
+     cin>>n;
 
+
+     for(int i=0;i<=n;i++){
+          int number;
+          float price,total;
+          cout<<"Enter number of items in the cart:";
+          cin>>number;
+          cout<<"Enter price:";
+          cin>>price;
+          total+=number*price;
+          cout<<"total price:"<<total<<endl;
+     }
+         //cout<<"total price"<<total<<endl;
 }
